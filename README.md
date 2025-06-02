@@ -2,12 +2,12 @@
 
 ## Sobre o projeto
 
-O "Cidade Sem Poluição - API Gateway" é um componente desenvolvido em Node.js que atua como um ponto central de entrada para as requisições destinadas aos microsserviços do backend [cidade-sem-poluicao-microservices](https://github.com/kassiosilva/cidade-sem-poluicao-microservices). Ele é responsável por receber todas as chamadas dos clientes, roteá-las para os microsserviços apropriados e retornar as respostas.
+O "Cidade Sem Poluição - API Gateway" é um componente desenvolvido em Node.js que atua como um ponto central de entrada para as requisições destinadas aos microsserviços do back-end [cidade-sem-poluicao-microservices](https://github.com/kassiosilva/cidade-sem-poluicao-microservices). Ele é responsável por receber todas as chamadas dos clientes, roteá-las para os microsserviços apropriados e retornar as respostas.
 
-Este gateway simplifica a arquitetura do sistema, centralizando responsabilidades como roteamento, autenticação e logging.
+Este gateway simplifica a arquitetura do sistema, centralizando responsabilidades como roteamento, autenticação e login.
 
 Principais funcionalidades:
-* Roteamento de requisições para os serviços de backend.
+* Roteamento de requisições para os serviços de back-end.
 * Ponto único de entrada para a API, facilitando a comunicação com o cliente.
 
 >  ℹ️ Quer saber mais?
@@ -41,24 +41,6 @@ Recebemos a request com recurso a ser acessado e encaminhamos para o seu respect
 | /register-donor    | https://cd-donation-service.vercel.app/register-donor    |
 | /contact-us        | https://cd-contact-us-service.vercel.app/contact-us      |
 
-## Estrutura do projeto
-```
-.
-├── .editorconfig
-├── .env
-├── .env.example
-├── .eslintignore
-├── .eslintrc.json
-├── .gitignore
-├── mise.toml
-├── .npmrc
-├── package.json
-├── package-lock.json
-├── README.md
-├── src
-│   └── index.js
-└── vercel.json
-```
 
 ## Tecnologias
 
@@ -73,7 +55,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **Plataforma de Hospedagem:** Vercel (https://cidade-sem-poluicao-api-gateway.vercel.app/)
 
 ## Como executar?
-1. Você precisa instalar **Node.js** na versão `>=22.14.0`. O projeto utiliza o [Mise](https://mise.jdx.dev/) para gerenciar a versão do node, se você utiliza o Mise basta executar o comando na raiz do projeto: `mise install`. Se não utilizar o mise basta utilizar o version manager de sua preferência(nvm, asdf e etc).
+1. Você precisa instalar **Node.js** na versão `>=22.14.0`. O projeto utiliza o [Mise](https://mise.jdx.dev/) para gerenciar a versão do node, se você utiliza o mise basta executar o comando na raiz do projeto: `mise install`. Se não utilizar o mise basta utilizar o version manager de sua preferência(nvm, asdf e etc).
 
 2. Clone o projeto e execute o comando abaixo para instalar as dependências:
     ```bash
